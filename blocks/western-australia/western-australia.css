@@ -1,0 +1,80 @@
+.western-australia {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevents flex items from wrapping into rows */
+  gap: 20px;
+  /* Adds space between columns */
+  justify-content: space-between;
+  /* Optional: ensures even distribution of items */
+  align-items: center;
+  /* Aligns items vertically */
+  background-color: #ebebeb;
+}
+
+.western-australia>div {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+}
+
+
+.western-australia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.western-australia>div>div {
+  order: 1;
+  flex: 1;
+  /* order: unset; */
+}
+
+.western-australia>div>div p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+#feature-article {
+  font-weight: 700;
+  font-size: 18px;
+  color: #202020;
+}
+
+#camping-in-western-australia {
+  font-weight: 700;
+  font-size: var(--fontSizeH2, 36px);
+}
+
+/* .western-australia>div>.western-australia-img-col {
+  order: 0;
+  width: 1 1 80%;
+}
+
+.western-australia>div>.western-australia-img-col img {
+  display: block;
+} */
+
+
+
+.western-australia > div > div.western-australia-img-col {
+  flex-basis: 65%;
+  display: flex;
+  align-self: stretch;
+}
+
+.western-australia > div > div:last-child {
+  flex-basis: 35%;
+  padding: 25px;
+  /* width: 100%; */
+  height: 100%;
+}
+
+@media (width >=900px) {
+  .western-australia>div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+}

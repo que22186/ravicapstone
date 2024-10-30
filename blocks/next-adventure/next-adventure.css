@@ -1,0 +1,55 @@
+main .section.highlight {
+    background-color: white;
+    padding: 0 0;
+    width: 100%
+}
+
+
+main .section.highlight .default-content-wrapper {
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: large;
+}
+
+.next-adventure {
+    position: relative;
+    width: 100%;
+    /* Ensures the container takes up only as much space as the content */
+}
+
+.next-adventure div > div:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 85%;
+    padding: 10px 25px;
+}
+
+
+.next-adventure>div {
+    position: relative;
+    /* Allows you to position text elements inside it */
+}
+
+.next-adventure picture img {
+    display: block;
+    /* Removes any space below the image */
+}
+
+.next-adventure h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    bottom: 70px; /* Positions h3 just above the p element */
+  }
+  
+  .next-adventure p {
+    font-size: 1rem;
+    bottom: 0px; /* Positions p at the bottom of the container */
+  }
+  .next-adventure .button-container{
+    bottom:-15px;
+    margin: 0px;
+    padding:0px;
+  }

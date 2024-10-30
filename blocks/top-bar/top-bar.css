@@ -1,0 +1,34 @@
+/* Full-width top bar at the top of the screen */
+header .top-bar-wrapper {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+
+/* Align top-bar content to the right with a 50px gap */
+header .top-bar-wrapper .top-bar {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 235px;
+    font-size: small;
+}
+
+/* Flex alignment for nested divs inside top-bar with a 5px gap */
+header .top-bar-wrapper .top-bar > div {
+    display: flex;
+    gap: 15px; /* Set gap between child divs to 5px */
+}
+.top-bar-wrapper .top-bar .button-container .button {
+    display: inline;
+    background-color: black;
+    border-radius: 0;
+    margin: 0;
+    padding:0;
+    color:white;
+    font-weight: 40;
+}
+header .top-bar-wrapper .top-bar > div > div > p a {
+    color:white
+}

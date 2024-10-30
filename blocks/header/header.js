@@ -177,4 +177,7 @@ export default async function decorate(block) {
   window.onscroll = function() {
     HeaderShrink();
   };
+
+  const topbar = document.querySelector('.top-bar-wrapper');
+  block.prepend(topbar);
 }

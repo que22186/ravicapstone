@@ -10,10 +10,45 @@
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  /* width: 260px; */
 }
 
 .cards .cards-card-body {
   margin: 16px;
+}
+.cards .cards-card-body p:last-child{
+  color: dimgray;
+  display: block;
+  font-size: var(--fontSizeSmall,14px);
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  overflow: hidden; /* Hides any overflow content */
+  text-overflow: ellipsis; 
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.members-only-section .cards ul li:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-gradient(linear, right bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(50%, hsla(0, 0%, 100%, 0)), color-stop(50%, var(--brandPrimary, #ffea00)), to(var(--brandPrimary, #ffea00)));
+  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0) 50%, var(--brandPrimary, #ffea00) 50%, var(--brandPrimary, #ffea00) 100%);
+  color: #000;
+  content: "🔒";
+  font-family: wknd-icon-font !important;
+  font-size: 1.25rem;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9pt;
+  position: relative;
+  text-transform: none;
+  top: 49px;
+  z-index: 2;
+}
+.members-only-section .cards ul li, .cards ul li{
+  border:none;
 }
 
 .cards .cards-card-image {
@@ -25,3 +60,4 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+

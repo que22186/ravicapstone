@@ -56,6 +56,7 @@ footer .columns img {
 .columns>div a{
   color:white;
 }
+
 .columns>div>div:last-child {
   display: flex;
   align-items: center;

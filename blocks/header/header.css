@@ -5,20 +5,21 @@ header {
   position: fixed;
 }
 
-header.small .nav-wrapper{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  box-shadow: 0 8px 20px 0 rgba(0,0,0,.26);
-}
-
-header .header {
-  width: 100vw;
-}
 header .nav-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--background-color);
   width: 100%;
+}
+
+header.small .nav-wrapper{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 8px 20px 0 var(--semi-transparent-black);
+}
+
+header .header {
+  width: 100vw;
 }
 
 header nav {
@@ -247,7 +248,6 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections ul {
     display: flex;
     gap: 24px;
-    /* margin-left: 400px; */
     justify-content: end;
   }
 
@@ -293,11 +293,12 @@ header .search{
   margin-top: 20px;
   width: 70%;
 }
+
 header .search .search-box input{
   background-color: #ebebeb8a;
-  border:0px;
+  border:0;
 }
-/* tools */
+
 header nav .nav-tools {
   grid-area: tools;
 }

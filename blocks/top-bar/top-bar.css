@@ -20,6 +20,7 @@ header .top-bar-wrapper .top-bar > div {
     display: flex;
     gap: 15px; /* Set gap between child divs to 5px */
 }
+
 .top-bar-wrapper .top-bar .button-container .button {
     display: inline;
     background-color: black;
@@ -29,6 +30,7 @@ header .top-bar-wrapper .top-bar > div {
     color:white;
     font-weight: 40;
 }
+
 header .top-bar-wrapper .top-bar > div > div > p a {
     color:white
 }

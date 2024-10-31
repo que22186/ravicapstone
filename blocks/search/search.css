@@ -4,6 +4,7 @@
     display: flex;
     align-items:center;
   }
+  
   /* Position the icon inside the input box */
 .search .icon-search {
     position: absolute;

@@ -53,18 +53,22 @@
     height: auto; /* Maintain aspect ratio */
     margin:0;
 }
+
 .contributor-card .contributor-card-card-image picture{
     display: flex;
     justify-content: center; 
 }
+
 .contributor-card-card-body p{
     font-size: small;
     font-weight: 800;
 }
+
 .contributor-card-card-body h3{
     margin:0;
     font-size: x-large;
 }
+
 main .section .default-content-wrapper h2::after{
     content:'';
     border-bottom: 2px solid yellow;

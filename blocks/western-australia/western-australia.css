@@ -1,13 +1,9 @@
 .western-australia {
   display: flex;
-  flex-wrap: nowrap;
-  /* Prevents flex items from wrapping into rows */
-  gap: 20px;
-  /* Adds space between columns */
-  justify-content: space-between;
-  /* Optional: ensures even distribution of items */
-  align-items: center;
-  /* Aligns items vertically */
+  flex-wrap: nowrap; /* Prevents flex items from wrapping into rows */
+  gap: 20px; /* Adds space between columns */
+  justify-content: space-between; /* Optional: ensures even distribution of items */
+  align-items: center; /* Aligns items vertically */
   background-color: #ebebeb;
 }
 
@@ -27,7 +23,6 @@
 .western-australia>div>div {
   order: 1;
   flex: 1;
-  /* order: unset; */
 }
 
 .western-australia>div>div p {
@@ -44,7 +39,7 @@
 
 #camping-in-western-australia {
   font-weight: 700;
-  font-size: var(--fontSizeH2, 36px);
+  font-size: var(--font-size-h2, 36px);
 }
 
 /* .western-australia>div>.western-australia-img-col {
@@ -67,7 +62,6 @@
 .western-australia > div > div:last-child {
   flex-basis: 35%;
   padding: 25px;
-  /* width: 100%; */
   height: 100%;
 }
 

@@ -20,12 +20,14 @@
     font-size: 14px;
     font-family: 'Source Sans 3', sans-serif;
   }
+
   .adventure-card .adventure-card-card-body p:last-child {
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap;
   }
+  
   .adventure-card .adventure-card-card-body p strong {
     font-weight: 600;
     font-size: 18px;

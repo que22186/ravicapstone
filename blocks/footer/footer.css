@@ -2,8 +2,14 @@ footer {
   background-color: #202020;
   font-size: var(--body-font-size-xs);
   padding:0 50px;
-  font-family: var(--fontFamilySansSerif,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-sans-erif,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif);
   color: #f7f7f7;
+}
+
+.columns > div {
+  display: flex; /* This ensures all direct children use flex properties */
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 footer .footer>div {
@@ -15,10 +21,10 @@ footer .footer p {
   margin-top: 1em;
   color: white;
   line-height: 1.25;
-  font-size: var(--fontSizeXSmall,9pt);;
+  font-size: var(--font-size-x-small,9pt);;
 }
 
-@media (min-width:900px) {
+@media (width>=900px) {
   footer .footer>div {
     padding: 20px 32px 24px;
   }
@@ -33,32 +39,27 @@ footer .section .default-content-wrapper>ul>li {
   color: white
 }
 
-footer .columns img {
-  display: inline-block;
-  width: auto;
-  height: 20px;
-  margin:8px 12px;
-}
 .columns-img-col img {
   display: inline-block;
   width: auto;
   height:50px;
   margin:8px 12px;
 }
-.columns > div {
-  display: flex; /* This ensures all direct children use flex properties */
-  width: 100%;
-  margin-bottom: 40px;
+
+footer .columns img {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  margin:8px 12px;
 }
 
 .columns>div>div:last-child {
   display: flex;
   align-items: center;
-  /* Vertically align items */
   gap: 10px;
   justify-content: flex-start;
-  width: 27%;  /* Set width to 30% */
-  flex: 0 0 27%; /* Prevent growing or shrinking */
+  width: 27%;
+  flex: 0 0 27%;
 }
 
 .columns>div>div:last-child p {
@@ -67,7 +68,6 @@ footer .columns img {
 
 .columns>div>div:last-child table {
   width: auto;
-  /* Pushes the table to the right */
   background-color: white;
   justify-content: flex-start;
 }
@@ -83,16 +83,13 @@ footer .columns img {
   list-style: none;
   gap: 40px;
   justify-content: flex-start;
-  /* Align items to the left */
   padding: 0; 
 }
 
 .columns>div>div:nth-child(2) ul li {
   color: white;
   white-space: nowrap;
-  /* Prevent text wrapping */
   text-align: center;
-  /* Optional: To center the text within each li */
   flex: unset; /* Remove flex property if it's still affecting layout */
 }
 

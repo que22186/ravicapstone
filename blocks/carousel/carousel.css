@@ -19,11 +19,13 @@
   .carousel .carousel-slides::-webkit-scrollbar {
     display: none;
   }
+
   .section.carousel-container .carousel-wrapper {
     margin: 0;
     padding: 0;
     max-width: 100%;
   }
+
   .carousel .carousel-slide {
     flex: 0 0 100%;
     scroll-snap-align: start;
@@ -62,7 +64,8 @@
     color: white;
     background-color: rgba(19 19 19 / 75%);
     position: relative;
-    width: var(--slide-content-width, auto); 
+    
+    /* width: var(--slide-content-width, auto);  */
     bottom: -90px;
     width: 80%;
   }

@@ -33,10 +33,12 @@
       order: unset;
     }
   }
+
   .faq-columns>div>div:nth-child(1) {
     width: 80%;
     flex: 0 0 80%;
 	}
+
   .faq-columns>div>div:nth-child(2) {
     width: 20%;
     flex: 0 0 20%;
@@ -45,12 +47,14 @@
     align-items: flex-start;
     margin-top: 20px; /* Adds some space at the top of the text section */
 	}
+
   .faq-columns>div>div:nth-child(2) h3{
-    font-family: var(--fontFamilySerif,"Asar",Georgia,"Times New Roman",Times,serif);
-    font-weight: var(--fontWeightNormal,normal);
+    font-family: var(--font-family-serif,"Asar",Georgia,"Times New Roman",Times,serif);
+    font-weight: var(--font-weight-normal,normal);
     margin-bottom: 13.5px;
     margin-top: 27px;
 	}
+
   .faq-columns>div>div:nth-child(2) p{
     font-size: 14px;
     margin-top: 10px; 

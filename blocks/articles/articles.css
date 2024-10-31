@@ -15,12 +15,14 @@
   .articles .articles-article-body {
     margin: 6px;
   }
+
   .articles .articles-article-body a.button {
     margin:0;
     border-radius: 0;
     background-color: var(--background-color);
     color: black;
-  }  
+  }
+    
   .articles .articles-article-image {
     line-height: 0;
   }

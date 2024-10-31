@@ -147,14 +147,13 @@ export default async function decorate(block) {
   }
 
   function HeaderShrink() {
-    const header = document.querySelector(".header-wrapper");
+    const header = document.querySelector('.header-wrapper');
     console.log(header);
-    
     // Check condition to page scrolled more than 50px
     if (window.scrollY > 50) {
-      header.classList.add("small");  // 'small' class added to reduce header size
+      header.classList.add('small');// 'small' class added to reduce header size
     } else {
-      header.classList.remove("small");  // 'small' class removed when scrolled up  
+      header.classList.remove('small');// 'small' class removed when scrolled up
     }
   }
   // hamburger for mobile
@@ -174,7 +173,7 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
-  window.onscroll = function() {
+  window.onscroll = function () {
     HeaderShrink();
   };
 

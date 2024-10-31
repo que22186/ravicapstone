@@ -1,9 +1,25 @@
 /* header and nav layout */
+header {
+  transition: padding 0.3s ease;
+  z-index: 999;
+  position: fixed;
+}
+
 header .nav-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
-  position: fixed;
+}
+
+header.small .nav-wrapper{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 8px 20px 0 var(--semi-transparent-black);
+}
+
+header .header {
+  width: 100vw;
 }
 
 header nav {
@@ -42,6 +58,7 @@ header nav[aria-expanded='true'] {
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
+    padding-bottom: 10px;
   }
 }
 
@@ -173,6 +190,16 @@ header nav .nav-sections ul > li {
   font-weight: 500;
 }
 
+header nav .nav-sections ul > li a {
+  padding: 15px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+header nav .nav-sections ul > li:hover a {
+  background-color: #ffea00;
+  text-decoration: none;
+}
+
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
@@ -221,7 +248,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections ul {
     display: flex;
     gap: 24px;
-    margin: 0;
+    justify-content: end;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -262,7 +289,26 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
+header .search{
+  margin-top: 20px;
+  width: 70%;
+}
+
+header .search .search-box input{
+  background-color: #ebebeb8a;
+  border:0;
+}
+
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header nav .section{
+flex: 1
+}
+
+
+header nav .section.nav-sections {
+  flex: 2;
+  flex-basis: 50%;
 }

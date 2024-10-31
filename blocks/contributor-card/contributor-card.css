@@ -1,0 +1,80 @@
+.contributor-card > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 5px;
+  }
+  
+  .contributor-card > ul > li {
+    margin-top: 20px;
+    background-color: var(--background-color);
+    display: flex; /* Enable flex on each list item */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Ensure it takes full height */
+  }
+  
+  .contributor-card .contributor-card-card-body {
+    margin: 16px;
+    display: flex; /* Enable flex layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    height: 100%; /* Ensure it takes full height */
+  }
+  
+  .contributor-card .contributor-card-card-image {
+    line-height: 0;
+    display: flex; /* Enable flex layout */
+    justify-content: center; /* Center images horizontally */
+  }
+  
+  .contributor-card > ul > li img {
+    width: 60%; /* Adjust percentage to control size */
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .contributor-card-card-body td {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep all <picture> elements in the same row */
+}
+
+/* Optional styling for <picture> elements for alignment and size */
+.contributor-card-card-body picture {
+    width: 50px; /* Set a specific width for each <picture> */
+    height: auto; /* Maintain aspect ratio */
+    margin:0;
+}
+
+.contributor-card .contributor-card-card-image picture{
+    display: flex;
+    justify-content: center; 
+}
+
+.contributor-card-card-body p{
+    font-size: small;
+    font-weight: 800;
+}
+
+.contributor-card-card-body h3{
+    margin:0;
+    font-size: x-large;
+}
+
+main .section .default-content-wrapper h2::after{
+    content:'';
+    border-bottom: 2px solid yellow;
+    display: block;
+    width:84px;
+    padding-top: 6px;
+
+}
+

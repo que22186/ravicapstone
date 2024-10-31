@@ -1,0 +1,45 @@
+.adventure-card > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
+  }
+  
+  .adventure-card > ul > li {
+    background-color: var(--background-color);
+  }
+  
+  .adventure-card .adventure-card-card-body {
+    margin: 16px;
+  }
+
+  .adventure-card .adventure-card-card-body p {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  .adventure-card .adventure-card-card-body p:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .adventure-card .adventure-card-card-body p strong {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .adventure-card .adventure-card-card-image {
+    line-height: 0;
+  }
+  
+  .adventure-card > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  

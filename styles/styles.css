@@ -10,6 +10,8 @@
  * governing permissions and limitations under the License.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Asar&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet');
+
 :root {
   /* colors */
   --background-color: white;
@@ -173,20 +175,22 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: var(--button-border-radius,0);
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-size: var(--font-size-small,14px);
+  font-weight: var(--font-weight-bold,600);
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--brand-primary,#ffea00);
+  color: var(--text-color,#202020);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 a.button:hover,
@@ -240,6 +244,7 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
+  padding-top: 200px;
 }
 
 @media (width >= 900px) {
@@ -254,4 +259,16 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+h1, h2, h3, h2#members-only {
+  font-family: Asar, serif;
+}
+
+.cards-container h2#recent-articles::after, .next-adventure-container h2#next-adventures::after{
+  content:'';
+  border-bottom: 2px solid yellow;
+  display: block;
+  width:84px;
+  padding-top: 6px;
 }
